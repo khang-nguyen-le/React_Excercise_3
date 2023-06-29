@@ -1,0 +1,28 @@
+.modal-text__product-name{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.modal-text__product-category {
+    color: #9E3500;
+}
+
+.modal-text__price{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+} 
+
+.modal-text__product-desc, .modal-text__status {
+    margin-bottom: 20px;
+}
+
+.modal-text__label {
+    font-weight: 700;
+}
+
+.modal-text__sizes-label {
+    margin-top: 4px;
+    width: 100%;
+    margin-bottom: 12px;
+}

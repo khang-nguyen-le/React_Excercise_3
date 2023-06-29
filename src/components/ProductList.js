@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import ProductItem from "./ProductItem";
 
 export default class ProductList extends Component {
+  saveProductDetailHandler = (item) => {
+    this.props.onChangeProductDetail(item)
+  }
+
   render() {
     let { items } = this.props;
 
@@ -12,7 +16,7 @@ export default class ProductList extends Component {
             {items.map((item, index) => {
               return (
                 <div className="col-4" key={index}>
-                  <ProductItem item={item}/>
+                  <ProductItem item={item} onSaveProductDetail={this.saveProductDetailHandler}/>
                 </div>
               );
             })}
