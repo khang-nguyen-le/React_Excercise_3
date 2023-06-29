@@ -17,7 +17,7 @@ export default class ProductItem extends Component {
           <div className="product-card__info">
             <h2 className="product-card__title">{item.name}</h2>
             <p className="product-card__subtitle">Men's Shoes</p>
-            <p className="product-card__short-desc">{item.description}</p>
+            <p className="product-card__short-desc">{item.shortDescription}</p>
             <p className="product-card__price">{`$${item.price}`}</p>
             <a
               href="#"

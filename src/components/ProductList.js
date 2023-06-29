@@ -15,8 +15,9 @@ export default class ProductList extends Component {
           <div className="row">
             {items.map((item, index) => {
               return (
-                <div className="col-4" key={index}>
-                  <ProductItem item={item} onSaveProductDetail={this.saveProductDetailHandler}/>
+                <div className="col-4">
+                  <ProductItem item={item} onSaveProductDetail={this.saveProductDetailHandler}
+                  key={item.id}/>
                 </div>
               );
             })}
